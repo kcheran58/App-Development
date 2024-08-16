@@ -1,0 +1,104 @@
+### Users
+
+POST http://localhost:3500/users
+Content-Type: application/json
+
+{
+    "fullName": "Jrtyuio",
+    "userName": "johndo1234e",
+    "email": "john@58.com",
+    "phoneNumber": "1234890",
+    "password": "securepassword"
+}
+
+###
+GET http://localhost:3500/users/
+
+
+###
+POST  http://localhost:3500/users/login
+Content-Type: application/json
+
+{
+   "userName":"johndoe",
+   "password":"password1"
+}
+
+###
+PUT http://localhost:3500/users/66b460dc32d9c6b42bb33a20
+Content-Type: application/json
+
+{
+    "fullName": "John Doe Updated",
+    "userName": "johnupdated"
+}
+
+###
+DELETE http://localhost:3500/users/66b5d816f3fc75e5dd870dfc
+
+
+###POSTS
+
+POST http://localhost:3500/posts
+Content-Type: application/json
+
+{
+    "author": "66b45f7f0765e8c360b21dba",
+    "category": "Teh",
+    "description": "A new tech post",
+    "content": "This is the content of the tech post.",
+    "likes":3
+}
+
+###
+GET http://localhost:3500/posts
+####66b5dc4b3c7a04c9138755dc,66b5dc4b3c7a04c9138755df,66b5dc4b3c7a04c9138755e2,66b5dc4b3c7a04c9138755e5,66b5dc4b3c7a04c9138755e8
+###66b5dc4b3c7a04c9138755eb,66b5dc4b3c7a04c9138755ee
+###
+GET  http://localhost:3500/posts
+
+###
+Delete  http://localhost:3500/posts/66ba3c715c54169eb945c830
+
+###
+GET http://localhost:3500/posts/66b461fb840094725069593e
+###
+POST http://localhost:3500/users/66b498b2c5c8c343499ce7dd/savedPosts
+Content-Type: application/json
+
+{
+  "postId": "66b4806e37ffbaa1a6e2456d"
+}
+
+###
+DELETE  http://localhost:3500/users/66b45f7f0765e8c360b21dba/savedPosts
+Content-Type: application/json
+
+{
+  "postId": "66b4806e37ffbaa1a6e2456d"
+}
+
+
+###COMMENTS
+POST http://localhost:3500/comments
+Content-Type: application/json
+
+{
+  "post": "66b4806e37ffbaa1a6e2456d",      
+  "author": "66b45f7f0765e8c360b21dba",
+  "content": "Comment content here"
+}
+
+
+###
+GET http://localhost:3500/comments/66b4678eab2f5e629af236e6
+
+###
+GET http://localhost:3500/comments
+
+
+###
+DELETE  http://localhost:3500/comments/66b4814337ffbaa1a6e2457d
+
+
+

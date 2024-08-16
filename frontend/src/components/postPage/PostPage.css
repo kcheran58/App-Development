@@ -1,0 +1,67 @@
+/* Container for the entire form */
+.post-page-container {
+  padding: 30px;
+  margin: 60px auto;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Style for form fields */
+.post-page-field {
+  margin-bottom: 20px;
+}
+
+/* Preview image styling */
+.post-page-img-preview {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-page-img-preview:hover {
+  transform: scale(1.05);
+}
+
+/* Button styling */
+.post-page-button {
+  margin-top: 20px;
+  background-color: #3f51b5;
+  color: #ffffff;
+  &:hover {
+    background-color: #303f9f;
+  }
+}
+
+/* Snackbar styling */
+.post-page-snackbar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Alert box styling */
+.post-page-alert {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

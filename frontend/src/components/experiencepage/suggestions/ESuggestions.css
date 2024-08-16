@@ -1,0 +1,155 @@
+.experience-suggestions {
+    padding: 30px;
+    background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Subtle background gradient */
+    border-radius: 8px; /* Rounded corners for container */
+}
+
+.s-h {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0b0000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for a subtle 3D effect */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.s-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 40vh;
+    flex: 0 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners are applied to content */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    animation: slideIn 0.5s ease-out; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.s-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background: rgb(210, 208, 208); /* Full opacity on hover */
+}
+
+.s-item-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1); /* Light background for content */
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+.s-item-content:hover {
+    background: rgba(0, 0, 0, 0.2); /* Darker background on hover */
+    animation: pulse 1s infinite; /* Pulse animation on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.s-item-avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 2px solid #ffffff; /* White border for the avatar */
+    transition: border-color 0.3s ease-in-out;
+    animation: bounceIn 1s; /* Bounce-in animation */
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.s-item-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.s-item-username {
+    font-weight: bold;
+    color: #333; /* Darker text color for username */
+}
+
+.s-item-date {
+    color: #888;
+    margin-bottom: 5px;
+    font-style: italic; /* Italicize date */
+}
+
+.s-item-category {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 5px;
+    text-transform: uppercase; /* Uppercase category text */
+}
+
+.s-item-text {
+    margin-top: 10px;
+    color: rgb(5, 5, 5);
+}
+
+.explore-button {
+    margin-top: auto;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border-radius: 20px; /* Rounded button */
+    text-transform: uppercase; /* Uppercase button text */
+    animation: fadeInUp 1s ease-out; /* Fade-in-up animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.explore-button:hover {
+    background-color: #007bff; /* Change button background on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}

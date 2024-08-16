@@ -1,0 +1,20 @@
+/* src/components/Filter/Filter.css */
+.filter-section {
+    width: 250px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    position: fixed; /* or relative if you prefer */
+    top: 50px;
+    left: 0;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-section h6 {
+    margin-bottom: 10px;
+}
+
+.filter-section .MuiSlider-root {
+    margin-top: 10px;
+}

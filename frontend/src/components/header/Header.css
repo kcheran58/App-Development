@@ -1,0 +1,118 @@
+.app-bar {
+  box-shadow: 0 4px 8px rgb(106, 106, 106); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+  outline: none;
+}
+
+.app-bar:hover {
+  background-color: black;
+}
+
+.menu-button {
+  transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+  transform: rotate(90deg); /* Rotate icon on hover for visual interest */
+}
+
+.app-bar-title {
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #f0f0f0; /* Light color for text */
+  transition: color 0.3s ease;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 0 10px;
+  margin-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.search-bar .MuiSvgIcon-root {
+  margin-right: 8px;
+  color: inherit;
+}
+
+.search-bar .MuiInputBase-root {
+  color: inherit;
+  width: 200px;
+}
+
+.app-bar-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.app-bar-buttons .MuiButton-root {
+  color: #f0f0f0; /* Light color for text */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.app-bar-buttons .MuiButton-root:hover {
+  color: #61dafb; /* Highlight color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .MuiButton-root {
+  color: #f0f0f0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-buttons .login-button:hover {
+  background-color: #3a3a3a; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.auth-buttons .signup-button {
+  border: 1px solid #61dafb; /* Border for the signup button */
+}
+
+.auth-buttons .signup-button:hover {
+  background-color: #61dafb; /* Background color on hover */
+  color: #000; /* Text color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.drawer {
+  background-color: #282c34; /* Dark background for the drawer */
+  color: #fff;
+}
+
+.drawer-item {
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.drawer-item:hover {
+  background-color: #444c5c; /* Highlight color on hover */
+}

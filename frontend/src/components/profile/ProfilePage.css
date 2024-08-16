@@ -1,0 +1,177 @@
+.profile-dashboard {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  
+  min-height: 100vh;
+  margin-top: 60px;
+}
+
+.profile-card {
+
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+ 
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card {
+
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.8);
+ 
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.profile-detail-card {
+  margin-bottom: 15px;
+}
+
+.profile-detail {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  z-index: 1;
+}
+
+.section-title {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.experience-card, .knowledge-card {
+  margin-bottom: 15px;
+}
+
+.knowledge-topic {
+  font-weight: bold;
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.9);
+ 
+}
+
+.post-content {
+  margin-bottom: 10px;
+}
+
+.MuiButton-outlined {
+  margin-top: 10px;
+}
+
+.MuiIconButton-root {
+  margin-left: 10px;
+}
+
+.MuiIconButton-root.MuiButtonBase-root {
+  border-radius: 50%;
+}
+
+/* Adjust colors as needed */
+.MuiIconButton-root.MuiButtonBase-root.Mui-error {
+  color: #f44336; /* Red for delete icon */
+}
+
+.MuiIconButton-root.MuiButtonBase-root.Mui-primary {
+  color: #1976d2; /* Blue for edit icon */
+}
+/* Styles for the update dialog */
+.dialog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dialog-content {
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  background-image: url('https://wallpapers.com/images/high/business-card-background-1920-x-1080-5ea2y8cj8ju4tyvm.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dialog-actions {
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog-input {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.dialog-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.dialog-input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+/* Button styling */
+.dialog-actions .MuiButton-root {
+  margin: 0 5px;
+}
+
+/* Colors for primary and secondary buttons */
+.MuiButton-primary {
+  color: #fff;
+  background-color: #1976d2;
+}
+
+.MuiButton-secondary {
+  color: #fff;
+  background-color: #f44336;
+}
+
+/* Custom scroll bar for text area */
+.dialog-input textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dialog-input textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+.dialog-input textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

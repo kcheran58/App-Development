@@ -1,0 +1,54 @@
+.lo {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Use align-items for vertical alignment */
+    margin: 0;
+    padding: 100px;
+}
+
+.lo-body {
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin: 0;
+    padding:0;
+}
+
+#lo-content {
+    background-image: url("https://wallpapers.com/images/high/black-man-reading-wtxch39um1jaxrpc.webp"); /* Ensure the path is correct */
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 300px 250px;
+    width: auto;
+    height: auto;
+    border-radius: 20px 0 0 20px;
+}
+
+#lo-login {
+    background-color: rgb(207, 207, 205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    width: 400px;
+    height: 560px;
+    gap: 20px;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+}
+
+.lo-login-items {
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+    align-items: center;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 0;
+}
+
